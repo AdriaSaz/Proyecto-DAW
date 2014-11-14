@@ -10,7 +10,9 @@ namespace CUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            int secreto = Logica_Juego.LogicaJuego.SecretoDeLaVida();
+            Console.WriteLine(secreto);
+            Console.ReadKey();
         }
     }
 }
