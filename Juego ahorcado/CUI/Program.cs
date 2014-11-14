@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogicaJuego;
+
+
 
 namespace CUI
 {
@@ -10,7 +13,7 @@ namespace CUI
     {
         static void Main(string[] args)
         {
-            int secreto = Logica_Juego.LogicaJuego.SecretoDeLaVida();
+            int secreto = Juego.SecretoDeLaVida();
             Console.WriteLine(secreto);
             Console.ReadKey();
         }
