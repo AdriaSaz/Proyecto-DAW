@@ -15,6 +15,7 @@ namespace CUI
         {
             int secreto = Juego.SecretoDeLaVida();
             Console.WriteLine(secreto+2);
+
             Console.ReadKey();
         }
     }
