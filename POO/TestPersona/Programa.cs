@@ -11,39 +11,41 @@ namespace TestPersona
     {
         static void Main()
         {
+           ////// Persona p = new Persona("adria");
 
-           // Pruebas();
-            TestPresentacion();
+           ////// p.SetNombre("Rodolfo");
+
+
+            Persona p3 = new Persona("Adria", "Saz");
+           //////// Pruebas();
+          
+            
             Console.ReadKey();
         }
 
-        private static void Pruebas()
+        //private static void Pruebas()
+        //{
+        //    Persona p;
+        //    p = new Persona();
+
+        //    Persona p2;
+        //    p2 = p;
+        //    p.Nombre = "pepito";
+
+        //    Console.WriteLine(p.Nombre);
+        //    string presentacion = p.Presentarse();
+        //    Console.WriteLine(presentacion);
+        //}
+
+        static void TestPresentacion(  Persona p)
         {
-            Persona p;
-            p = new Persona();
+           
 
-            Persona p2;
-            p2 = p;
-            p.Nombre = "pepito";
+            Console.WriteLine(p.Presentarse());
+          
 
-            Console.WriteLine(p.Nombre);
-            string presentacion = p.Presentarse();
-            Console.WriteLine(presentacion);
         }
 
-        static void TestPresentacion()
-        {
-            Persona p1 = new Persona();
-            p1.Nombre = "Roberto";
-            p1.Apellido = "Perez";
-
-            Persona p2 = new Persona();
-            p2.Nombre = "Rodolfo";
-            p2.Apellido = "Gomez";
-
-            Console.WriteLine(p1.Presentarse());
-            Console.WriteLine(p2.Presentarse());
-
-        }
+      
     }
 }
