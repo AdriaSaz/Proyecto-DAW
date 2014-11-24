@@ -41,5 +41,11 @@ namespace Clases
             this.Creacion = DateTime.Now;
         }
 
+        public string NombreCompleto
+        {
+            get {  return this.Nombre + " " + this.Apellido; }
+        }
+
+        public DateTime FechaNacimiento { get; set; } 
     }
 }

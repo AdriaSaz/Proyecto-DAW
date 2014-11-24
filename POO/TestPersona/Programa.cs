@@ -18,7 +18,8 @@ namespace TestPersona
 
             Persona p3 = new Persona("Adria", "Saz");
            //////// Pruebas();
-          
+            Console.WriteLine(p3.NombreCompleto);
+            Persona p2 = new Persona("Maria"); { Ape}
             
             Console.ReadKey();
         }

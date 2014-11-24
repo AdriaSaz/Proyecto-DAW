@@ -13,9 +13,26 @@ namespace CUI
     {
         static void Main(string[] args)
         {
-            int secreto = Juego.SecretoDeLaVida();
-            Console.WriteLine(secreto+2);
 
+            bool acierto;
+            int intento = 0;
+            string palabra;
+
+            Console.WriteLine("Introduce una palabra a ocultar");
+            palabra = Console.ReadLine();
+            //Ocultamos palabra para mostrarla ocuulta
+            Juego.OcultarPalabra(palabra);
+            //recogems la letra
+            do
+            {
+                Console.WriteLine("Introduce una letra");
+                char letra = Console.ReadLine()[0];
+               acierto = Juego.ComprobarLetra(letra, palabra);
+            } while (!Juego.fin && Juego.intentos != 7);
+                
+           
+            Console.WriteLine("{0}",Juego.Oculto);
+            Console.WriteLine(letra);
             Console.ReadKey();
         }
     }
