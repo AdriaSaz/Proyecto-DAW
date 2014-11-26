@@ -8,6 +8,9 @@ namespace Clases
 {
     public class Persona
     {
+        private static int poblacion = 0;
+
+
         public readonly DateTime Creacion;
         public String Apellido {get; set;}
         public string Email;
@@ -47,5 +50,16 @@ namespace Clases
         }
 
         public DateTime FechaNacimiento { get; set; } 
+
+
+        public int Edad
+        {
+            get
+            {
+               
+                return DateTime.Now.Year - this.FechaNacimiento.Year +
+                     DateTime.Now.DayOfYear < this.FechaNacimiento.DayOfYear ? -1 : 0;
+            }
+        }
     }
 }

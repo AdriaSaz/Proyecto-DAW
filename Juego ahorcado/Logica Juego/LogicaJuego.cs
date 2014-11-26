@@ -11,7 +11,7 @@ namespace LogicaJuego
     {
         public static int largo; 
         public static string Oculto; //Contiene la palabra codificada
-        public static bool fin = false;
+        
         public static int intentos = 0;
 
 
@@ -54,24 +54,30 @@ namespace LogicaJuego
 
         private static void RemplazoLetra(char letra, int i)
         {
-            StringBuilder sb = new StringBuilder(Oculto);
-            sb[i] = letra;
-            Oculto = sb.ToString();
+            StringBuilder sbOculto = new StringBuilder(Oculto);
+            sbOculto[i] = letra;
+            Oculto = sbOculto.ToString();
         }
 
         public static void cargando()
         {
-           
+            
              int car=20;
              int i=0;
              Console.Write("cargando");
                 for (i=0;i<=car;i++)
                 {
-                    Console.Write((char)219);
+                    Console.Write("{0}",(char)219);
                     System.Threading.Thread.Sleep(50);
                     
                 }
                 Console.WriteLine();
-        }             
+        }   
+        
+        public static bool ComprobarPalabraFin(string palabra)
+        {
+            return palabra.Equals(Oculto) ? true : false;
+               
+        }
     }
 }
