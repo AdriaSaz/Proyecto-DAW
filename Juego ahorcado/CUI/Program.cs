@@ -24,9 +24,12 @@ namespace CUI
             //Ocultamos palabra para mostrarla ocuulta
             Juego.OcultarPalabra(palabra);
             //recogemos la letra
-            Juego.cargando();
+            Dibujo.cargando();
+            Dibujo.dibujo_inicial();
+           
             do
             {
+              
                 Console.WriteLine(Juego.intentos);
                 Console.WriteLine("{0}", Juego.Oculto);
                 Console.WriteLine("Introduce una letra");
@@ -42,7 +45,7 @@ namespace CUI
            
          if(acierto)
          {
-             Console.WriteLine("enhorabuena has acertado la palabra oculta '{0}'", palabra)
+             Console.WriteLine("enhorabuena has acertado la palabra oculta '{0}'", palabra);
          }
          else
          {

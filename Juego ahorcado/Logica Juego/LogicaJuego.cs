@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _3DGraphics;
 
 namespace LogicaJuego
 {
@@ -40,12 +41,14 @@ namespace LogicaJuego
                 }
             }
             if(cont>0)
-            { 
+            {
+                Dibujo.dibujar();
                 return true;
             }
             else
             {
-                intentos++;
+               
+                Dibujo.fallo(intentos++);
                 return false;
             }
 
@@ -59,20 +62,7 @@ namespace LogicaJuego
             Oculto = sbOculto.ToString();
         }
 
-        public static void cargando()
-        {
-            
-             int car=20;
-             int i=0;
-             Console.Write("cargando");
-                for (i=0;i<=car;i++)
-                {
-                    Console.Write("{0}",(char)219);
-                    System.Threading.Thread.Sleep(50);
-                    
-                }
-                Console.WriteLine();
-        }   
+        
         
         public static bool ComprobarPalabraFin(string palabra)
         {

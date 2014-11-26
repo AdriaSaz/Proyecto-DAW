@@ -42,6 +42,12 @@
     <Compile Include="LogicaJuego.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3DGraphics\3DGraphics.csproj">
+      <Project>{a9e11905-cffa-40ba-b3f7-2e51f1e7e2a5}</Project>
+      <Name>3DGraphics</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
