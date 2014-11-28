@@ -12,6 +12,7 @@ namespace CUI
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             char letra;
