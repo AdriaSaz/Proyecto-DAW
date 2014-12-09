@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPersona", "TestPersona\TestPersona.csproj", "{3F4D2FFB-1441-47D7-A82C-07077755CE9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herencia", "Herencia\Herencia.csproj", "{97DD332C-E979-4C7E-BB43-B9ACB05D8C94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F4D2FFB-1441-47D7-A82C-07077755CE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4D2FFB-1441-47D7-A82C-07077755CE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4D2FFB-1441-47D7-A82C-07077755CE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DD332C-E979-4C7E-BB43-B9ACB05D8C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DD332C-E979-4C7E-BB43-B9ACB05D8C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DD332C-E979-4C7E-BB43-B9ACB05D8C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DD332C-E979-4C7E-BB43-B9ACB05D8C94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
